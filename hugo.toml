@@ -10,6 +10,8 @@ pagerSize = 20
 
 [services]
 
+  [services.googleAnalytics]
+    id = "G-J8QG3MCFPF"
 # [services.disqus]
 # shortname = "yourdiscussshortname"
 
