@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jprocha</title>
+    <link>http://localhost:1313/til/</link>
+    <description>Recent content on jprocha</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 01 Jan 2025 20:51:36 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/til/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flying Cows</title>
+      <link>http://localhost:1313/til/flying_cows/</link>
+      <pubDate>Wed, 01 Jan 2025 20:51:36 -0300</pubDate>
+      <guid>http://localhost:1313/til/flying_cows/</guid>
+      <description>&lt;p&gt;The physics of flying cows is a really interesting subject, which is&#xA;very important for the economy, given that their poop can fertilize&#xA;entire fields in an efficient air bone manner.&lt;/p&gt;&#xA;&lt;p&gt;Nevertheless they can also be a problem when flying cows flyes over&#xA;cities, since they can fall on business places growing the business&#xA;expenses on poop cleaning, given that they already have their own to&#xA;clean, this process is quite inefficient.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

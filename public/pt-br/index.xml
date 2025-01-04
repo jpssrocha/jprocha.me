@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jprocha</title>
+    <link>http://localhost:1313/pt-br/</link>
+    <description>Recent content on jprocha</description>
+    <generator>Hugo</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Wed, 01 Jan 2025 20:51:36 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/pt-br/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vacas Voadoras</title>
+      <link>http://localhost:1313/pt-br/til/flying_cows/</link>
+      <pubDate>Wed, 01 Jan 2025 20:51:36 -0300</pubDate>
+      <guid>http://localhost:1313/pt-br/til/flying_cows/</guid>
+      <description>&lt;p&gt;A física das vacas voadoras é um assunto realmente interessante, que é muito&#xA;importante para a economia, dado que seu cocô pode fertilizar campos inteiros&#xA;de uma aérea maneira eficiente.&lt;/p&gt;&#xA;&lt;p&gt;No entanto, também pode ser um problema quando as vacas voadoras voam sobre&#xA;cidades, já que podem cagar em  negócios aumentando as despesas com limpeza de&#xA;caca, dado que os negócios já têm sua própria caca para limpar, esse processo é&#xA;bastante ineficiente.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sobre</title>
+      <link>http://localhost:1313/pt-br/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt-br/about/</guid>
+      <description>&lt;p&gt;Oi, Sou João Pedro Rocha, estudante de pós-graduação em Computação Científica&#xA;no LNCC. (Laboratório Nacional de Computação Científica, &amp;#x1f1e7;&amp;#x1f1f7;).&lt;/p&gt;&#xA;&lt;p&gt;Sou formado em Física e agora estou desenvolvendo pesquisas em Aprendizado de&#xA;Máquina Científico, com Redes Neurais Informadas por Física aplicadas a&#xA;Fenômenos de Transporte para a segurança de reatores nucleares.&lt;/p&gt;&#xA;&lt;p&gt;Também trabalho com processamento de dados astrofísicos, principalmente séries&#xA;temporais fotométricas, adquiridas com os telescópios gerenciados pelo LNA&#xA;(Laboratório Nacional de Astrofísica, também &amp;#x1f1e7;&amp;#x1f1f7; e &amp;#x1f1e8;&amp;#x1f1f1;).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

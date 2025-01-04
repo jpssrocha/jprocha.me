@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jprocha</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on jprocha</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 01 Jan 2025 20:51:36 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flying Cows</title>
+      <link>http://localhost:1313/til/flying_cows/</link>
+      <pubDate>Wed, 01 Jan 2025 20:51:36 -0300</pubDate>
+      <guid>http://localhost:1313/til/flying_cows/</guid>
+      <description>&lt;p&gt;The physics of flying cows is a really interesting subject, which is&#xA;very important for the economy, given that their poop can fertilize&#xA;entire fields in an efficient air bone manner.&lt;/p&gt;&#xA;&lt;p&gt;Nevertheless they can also be a problem when flying cows flyes over&#xA;cities, since they can fall on business places growing the business&#xA;expenses on poop cleaning, given that they already have their own to&#xA;clean, this process is quite inefficient.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Hi, I&amp;rsquo;m João Pedro Rocha, a Graduate Student in Scientific Computing at LNCC&#xA;(National Laboratory for Scientific Computing, &amp;#x1f1e7;&amp;#x1f1f7;).&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m from a Physics background and am now developing research in Scientific&#xA;Machine Learning, with Physics Informed Neural Networks applied to Transport&#xA;Phenomena for nuclear reactor safety.&lt;/p&gt;&#xA;&lt;p&gt;I also do some work with Astrophysical data processing, mainly photometrical&#xA;time series, acquired with the telescopes managed by the LNA (National Astrophysics&#xA;Laboratory, also &amp;#x1f1e7;&amp;#x1f1f7; and &amp;#x1f1e8;&amp;#x1f1f1;).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
