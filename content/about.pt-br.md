@@ -12,7 +12,7 @@ Fenômenos de Transporte para a segurança de reatores nucleares.
 
 Também trabalho com processamento de dados astrofísicos, principalmente séries
 temporais fotométricas, adquiridas com os telescópios gerenciados pelo LNA
-(Laboratório Nacional de Astrofísica, também :brazil: e :chile:).
+(Laboratório Nacional de Astrofísica, também :brazil:).
 
 
 Aqui eu compartilho o que aprendo ao longo do caminho para que aqueles que

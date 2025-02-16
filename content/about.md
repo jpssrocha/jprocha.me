@@ -12,7 +12,7 @@ Phenomena for nuclear reactor safety.
 
 I also do some work with Astrophysical data processing, mainly photometrical
 time series, acquired with the telescopes managed by the LNA (National Astrophysics
-Laboratory, also :brazil: and :chile:).
+Laboratory, also :brazil:).
 
 
 Here i share about the stuff i learn along the way so that who are interested
