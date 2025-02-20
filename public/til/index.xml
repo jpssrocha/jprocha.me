@@ -6,8 +6,15 @@
     <description>Recent content on jprocha</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Jan 2025 20:51:36 -0300</lastBuildDate>
+    <lastBuildDate>Mon, 17 Feb 2025 10:30:35 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/til/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RAG for Scientists and Science Students</title>
+      <link>http://localhost:1313/til/rag_for_science_and_students/</link>
+      <pubDate>Mon, 17 Feb 2025 10:30:35 -0300</pubDate>
+      <guid>http://localhost:1313/til/rag_for_science_and_students/</guid>
+      <description>&lt;p&gt;Some time ago I&amp;rsquo;ve saw the internet be flooded with the term &lt;strong&gt;RAG&lt;/strong&gt;, which&#xA;stands for &lt;em&gt;Retrieval Augmented Generation&lt;/em&gt;. At the time i didn&amp;rsquo;t paid a lot of&#xA;attention, since it was related with the much hyped subject of Generative AI&#xA;and LLMs (Large Language Models), so I&amp;rsquo;ve thought it wasn&amp;rsquo;t that useful and&#xA;people was talking about it just because it was aligned with the hype cycle.&lt;/p&gt;&#xA;&lt;p&gt;Nonetheless, yesterday I&amp;rsquo;ve took a look at it &amp;hellip; And discovered that i was&#xA;wrong, this thing is highly useful (specially for ADHD people like myself).&#xA;After some time reflecting about my attitude of judging the book by it&amp;rsquo;s cover,&#xA;I&amp;rsquo;ve researched a bit about more the subject and started to think about the&#xA;possibilities (i&amp;rsquo;ll leave the resources i&amp;rsquo;ve found useful at the bottom). I&amp;rsquo;ll now&#xA;share with you the core idea of it and then some i&amp;rsquo;ve had that i think will be&#xA;useful for scientist and science students (like me). I&amp;rsquo;ll be focusing on RAGs&#xA;for text data, still, it can be used with other types of media, the idea is&#xA;roughly the same, with some asterisks.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Flying Cows</title>
       <link>http://localhost:1313/til/flying_cows/</link>

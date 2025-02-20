@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  RAG for Scientists and Science Students · jprocha
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="João Pedro Rocha">
+<meta name="description" content="Some time ago I&rsquo;ve saw the internet be flooded with the term RAG, which
+stands for Retrieval Augmented Generation. At the time i didn&rsquo;t paid a lot of
+attention, since it was related with the much hyped subject of Generative AI
+and LLMs (Large Language Models), so I&rsquo;ve thought it wasn&rsquo;t that useful and
+people was talking about it just because it was aligned with the hype cycle.
+Nonetheless, yesterday I&rsquo;ve took a look at it &hellip; And discovered that i was
+wrong, this thing is highly useful (specially for ADHD people like myself).
+After some time reflecting about my attitude of judging the book by it&rsquo;s cover,
+I&rsquo;ve researched a bit about more the subject and started to think about the
+possibilities (i&rsquo;ll leave the resources i&rsquo;ve found useful at the bottom). I&rsquo;ll now
+share with you the core idea of it and then some i&rsquo;ve had that i think will be
+useful for scientist and science students (like me). I&rsquo;ll be focusing on RAGs
+for text data, still, it can be used with other types of media, the idea is
+roughly the same, with some asterisks.">
+<meta name="keywords" content="blog,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="RAG for Scientists and Science Students">
+  <meta name="twitter:description" content="Some time ago I’ve saw the internet be flooded with the term RAG, which stands for Retrieval Augmented Generation. At the time i didn’t paid a lot of attention, since it was related with the much hyped subject of Generative AI and LLMs (Large Language Models), so I’ve thought it wasn’t that useful and people was talking about it just because it was aligned with the hype cycle.
+Nonetheless, yesterday I’ve took a look at it … And discovered that i was wrong, this thing is highly useful (specially for ADHD people like myself). After some time reflecting about my attitude of judging the book by it’s cover, I’ve researched a bit about more the subject and started to think about the possibilities (i’ll leave the resources i’ve found useful at the bottom). I’ll now share with you the core idea of it and then some i’ve had that i think will be useful for scientist and science students (like me). I’ll be focusing on RAGs for text data, still, it can be used with other types of media, the idea is roughly the same, with some asterisks.">
+
+<meta property="og:url" content="http://localhost:1313/til/rag_for_science_and_students/">
+  <meta property="og:site_name" content="jprocha">
+  <meta property="og:title" content="RAG for Scientists and Science Students">
+  <meta property="og:description" content="Some time ago I’ve saw the internet be flooded with the term RAG, which stands for Retrieval Augmented Generation. At the time i didn’t paid a lot of attention, since it was related with the much hyped subject of Generative AI and LLMs (Large Language Models), so I’ve thought it wasn’t that useful and people was talking about it just because it was aligned with the hype cycle.
+Nonetheless, yesterday I’ve took a look at it … And discovered that i was wrong, this thing is highly useful (specially for ADHD people like myself). After some time reflecting about my attitude of judging the book by it’s cover, I’ve researched a bit about more the subject and started to think about the possibilities (i’ll leave the resources i’ve found useful at the bottom). I’ll now share with you the core idea of it and then some i’ve had that i think will be useful for scientist and science students (like me). I’ll be focusing on RAGs for text data, still, it can be used with other types of media, the idea is roughly the same, with some asterisks.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="til">
+    <meta property="article:published_time" content="2025-02-17T10:30:35-03:00">
+    <meta property="article:modified_time" content="2025-02-17T10:30:35-03:00">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/til/rag_for_science_and_students/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      jprocha
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/til/">TIL</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/pt-br/">🇧🇷</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://localhost:1313/til/rag_for_science_and_students/">
+          RAG for Scientists and Science Students
+        </a>
+      </h1>
+    </header>
+
+    <p>Some time ago I&rsquo;ve saw the internet be flooded with the term <strong>RAG</strong>, which
+stands for <em>Retrieval Augmented Generation</em>. At the time i didn&rsquo;t paid a lot of
+attention, since it was related with the much hyped subject of Generative AI
+and LLMs (Large Language Models), so I&rsquo;ve thought it wasn&rsquo;t that useful and
+people was talking about it just because it was aligned with the hype cycle.</p>
+<p>Nonetheless, yesterday I&rsquo;ve took a look at it &hellip; And discovered that i was
+wrong, this thing is highly useful (specially for ADHD people like myself).
+After some time reflecting about my attitude of judging the book by it&rsquo;s cover,
+I&rsquo;ve researched a bit about more the subject and started to think about the
+possibilities (i&rsquo;ll leave the resources i&rsquo;ve found useful at the bottom). I&rsquo;ll now
+share with you the core idea of it and then some i&rsquo;ve had that i think will be
+useful for scientist and science students (like me). I&rsquo;ll be focusing on RAGs
+for text data, still, it can be used with other types of media, the idea is
+roughly the same, with some asterisks.</p>
+<h1 id="the-concepts-around-rag">
+  The concepts around RAG
+  <a class="heading-link" href="#the-concepts-around-rag">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>The term &ldquo;Retrieval Augmented Generation&rdquo; (or RAG) may sound fancy, but the
+main idea is quite simple and elegant (once you have access to a trained LLM).
+For context lets return to the basics - speaking in simple terms - LLMs operates
+as next word guessers (or more precisely: next token guessers), which means
+that in their training process they basically &ldquo;read&rdquo; a lot of text while trying
+to guess the next word (for more details the 3B1B series on LLM&rsquo;s is amazing!
+Link bellow), the more they learn to get the next token right, the knowledge
+and pattern of that text gets &ldquo;imprinted&rdquo; on the weights of it&rsquo;s neural
+network. This process is done to extremely huge amounts of text so that the
+model learns a lot about a broad spectrum. Nonetheless, when you want to know
+something about an specific document, audio, etc the neural net obviously can&rsquo;t
+know anything about it if it wasn&rsquo;t on the body of data it was trained on and
+if you ask for it the LLM may even hallucinate it &hellip; Therefore when a company
+or individual want a that can answer queries about an specific body of that they
+have 2 main options (that i&rsquo;m aware of &hellip;):</p>
+<ul>
+<li>Fine Tuning</li>
+<li>Retrieval Augmented Generation</li>
+</ul>
+<p>The process of fine tuning consists of taking an already trained model and
+training it again on a smaller more targeted data set - that can be for example
+a set of papers for a research project, or the documentation of your favorite
+tools - making the model learn new information from it and improve performance
+on tasks related to that data set. Despite being very useful, it comes with its
+pros and cons, a big con is that it is ineffective to use with real time data
+such as papers being published in a fast moving field, or monitoring news,
+postings, and other sources of this kind. Since each time a new source comes
+one would need to train the network again generating a new version, which is
+highly costly both in compute and storage.</p>
+<p>This kind of scenario is where RAG systems shine! These can be used directly
+with an out-of-the-box LLM or in combination with fine tuned ones. Let&rsquo;s talk
+about then now!</p>
+<h1 id="the-concept-of-rag">
+  The concept of RAG
+  <a class="heading-link" href="#the-concept-of-rag">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Retrieval Augmented Generation is quite simple, basically it is the practice
+of enhancing the input for an LLM with text you recover from some data source.
+Breaking it down it would be something like:</p>
+<ol>
+<li>You write a query (or queries) for the LLM with a place for inputting new context</li>
+<li>You retrieve this context data from somewhere</li>
+<li>You send the query to the LLM so it can generate output</li>
+</ol>
+<p>That&rsquo;s it &hellip; The concept behind RAG is so simple that I&rsquo;ve already started using it without
+even realizing, for examples, some times i would write text and ask for chatgpt or deepseek
+to help me improve it. The queries would be something like:</p>
+<pre tabindex="0"><code>Read the text between quotes bellow:
+
+&#34;
+{TEXT}
+&#34;
+
+Now please, help me improving the structure of this text rearranging the ideas
+so they flow more naturally while keeping the style. Show me the complete new
+suggested text under quotes and then explain me the reason for changing each 
+paragraph.
+</code></pre><p>In this example i have (1) a query with a placeholder, (2) a customized information
+i&rsquo;ll input into it (by hand in this case), (3) i send it to the LLM over the chat.
+In this case, off course the LLM don&rsquo;t know about my text i&rsquo;ve just written, it would
+be overkill to do fine-tuning for such task, that&rsquo;s a perfect example of the essence
+of RAG.</p>
+<p>Despite the basic idea being simple this can get quite elaborate, for example,
+(1) the input query could be multiple ones with different purposes to be later
+combined, or be done in sequence, (2) the contextual information could come
+from a vector database, internet search, SQL database, or even multiple sources
+combined that have to be updated and managed daily, and (3) the generation
+process could require sophisticated control logic for combining many results
+into an output.</p>
+<p>Some examples of sophisticated RAG systems that i use daily are
+<a href="perplexity.ai" >perplexity</a> and <a href="consensus.app" >consensus</a> (imagine if
+perplexity fine tuned a model every time something new is indexed by google and
+other search engines &hellip;). However this could be used in simple daily tasks to
+automate boring stuff and improve productivity. A good way of doing so for
+researchers and students is by utilizing, structured outputs.</p>
+<h1 id="a-rag-superpower---structured-outputs">
+  A RAG superpower - Structured Outputs
+  <a class="heading-link" href="#a-rag-superpower---structured-outputs">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>A common task for research (be scientific or not) is to feed spreadsheets and
+databases by painstakingly reading papers, documents and things of this nature
+(the ADHD nightmare) &hellip; but fear not RAG systems are perfect for that &hellip; By simply
+asking an LLM to output it&rsquo;s generated content in a given form, it will do so! Then
+you can simply parse it with you favorite tool! For me this looks like, asking the
+neural net to output the content into JSON, parsing into with Python&rsquo;s native
+JSON engine and then using the result to instantiate the most adequate data structure
+for the job (mostly pandas dataframes).</p>
+<p>This saves ages of hustle cause you can then take these formatted outputs and do
+what you need inside an easy to automate environment! (the ADHD dream!).</p>
+<h1 id="a-word-of-caution">
+  A word of caution
+  <a class="heading-link" href="#a-word-of-caution">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Despite all these positive points bear in mind that LLM&rsquo;s are still LLM&rsquo;s even
+when aided by RAG, so they can hallucinate, even tough the amount of
+hallucinations are less. Since RAG systems became so popular there are many
+guidelines one can follow in order to improve the situation such as keeping the
+context input small, actively instructing the model not to create information
+and reducing the LLM temperature parameters. It&rsquo;s always a good idea to test
+your system against a validation data set to see if things are working
+properly and use some hallucination evaluation tools (link bellow).</p>
+<h1 id="some-ideas">
+  Some ideas
+  <a class="heading-link" href="#some-ideas">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h1 id="useful-links">
+  Useful links
+  <a class="heading-link" href="#useful-links">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<ul>
+<li><a href="https://youtu.be/of4UDMvi2Kw?si=-Vqic8KKT3OR1mW6"  class="external-link" target="_blank" rel="noopener">A Helping Hand for LLMs (RAG) - Computerphile</a></li>
+<li><a href="https://youtu.be/LPZh9BOjkQs?si=W2H2UkKEjngwZ-Sj"  class="external-link" target="_blank" rel="noopener">Large Language Models Explained Briefly - 3Blue1Brown</a></li>
+<li><a href="https://towardsdatascience.com/detecting-hallucination-in-rag-ecaf251a6633/"  class="external-link" target="_blank" rel="noopener">RAG Isn’t Immune to LLM Hallucination</a></li>
+</ul>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2025
+     João Pedro Rocha 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8QG3MCFPF"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-J8QG3MCFPF');
+        }
+      </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/til/</loc>
-    <lastmod>2025-01-01T20:51:36-03:00</lastmod>
+    <lastmod>2025-02-17T10:30:35-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
@@ -14,6 +14,22 @@
                 hreflang="en"
                 href="http://localhost:1313/til/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-02-17T10:30:35-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="http://localhost:1313/pt-br/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/til/rag_for_science_and_students/</loc>
+    <lastmod>2025-02-17T10:30:35-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/til/flying_cows/</loc>
     <lastmod>2025-01-01T20:51:36-03:00</lastmod>
@@ -26,19 +42,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/til/flying_cows/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-01-01T20:51:36-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="http://localhost:1313/pt-br/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/"
                 />
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
