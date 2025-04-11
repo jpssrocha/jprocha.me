@@ -2,11 +2,11 @@
 title = 'Sobre'
 +++
 
-Oi, Sou João Pedro Rocha, estudante de pós-graduação em Computação Científica
+Oi, Sou João Pedro Rocha, estudante de Mestrado em Computação Científica
 no LNCC. (Laboratório Nacional de Computação Científica, :brazil:). 
 
 
-Sou formado em Física e agora estou desenvolvendo pesquisas em Aprendizado de
+Sou formado em Física e agora estou desenvolvendo pesquisa em Aprendizado de
 Máquina Científico, com Redes Neurais Informadas por Física aplicadas a
 Fenômenos de Transporte para a segurança de reatores nucleares. 
 

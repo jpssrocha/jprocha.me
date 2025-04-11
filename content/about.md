@@ -2,7 +2,7 @@
 title = 'About'
 +++
 
-Hi, I'm João Pedro Rocha, a Graduate Student in Scientific Computing at LNCC
+Hi, I'm João Pedro Rocha, a Masters Student of Scientific Computing at LNCC
 (National Laboratory for Scientific Computing, :brazil:). 
 
 
