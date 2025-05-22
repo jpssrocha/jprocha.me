@@ -4,7 +4,7 @@ draft = false
 title = 'Xhosa-Zulu Cliking Sounds'
 +++
 
-Well according to the voices of my head i was supposed to write about
+Well ... according to the voices of my head i was supposed to write about
 science and tech here ... But i discovered something cool in the intervals of
 discussions about science and tech these day. It happened that there was a BRICS
 meeting at my institute about the collaborations in HPC and AI, so we had people
