@@ -1,7 +1,7 @@
 +++
 date = '2025-05-22T08:44:16-03:00'
 draft = false
-title = 'Surrogate_modelling_and_PIML'
+title = 'Surrogate modelling and PIML'
 +++
 
 I've been studying Physics Informed Machine Learning for my master thesis
