@@ -26,3 +26,8 @@ Here you will find:
 - [TIL](/til/): Nuggets of knowledge learned on a given day.
 - [Projects](/project/): Some info about the projects I'm currently in.
 - [Blog](/posts/): Long form knowledge nugget.
+
+If you want to see my cv you can find it on:
+
+- [English](https://github.com/jpssrocha/cv_jpsrocha/raw/refs/heads/main/cv_en.pdf?download=)
+- [Portuguese](https://github.com/jpssrocha/cv_jpsrocha/raw/refs/heads/main/cv.pdf?download=)

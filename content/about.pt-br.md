@@ -27,3 +27,7 @@ Aqui você encontrará:
 - [Projetos](/project/): Algumas informações sobre os projetos em que estou atualmente.
 - [Blog](/posts/): Pílula de conhecimento em formato longo.
 
+Se quiser ver meu currículo ele está disponível em:
+
+- [Português](https://github.com/jpssrocha/cv_jpsrocha/raw/refs/heads/main/cv.pdf?download=)
+- [Inglês](https://github.com/jpssrocha/cv_jpsrocha/raw/refs/heads/main/cv_en.pdf?download=)
