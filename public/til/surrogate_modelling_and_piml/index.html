@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  Surrogate modelling and PIML · jprocha
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="João Pedro Rocha">
+<meta name="description" content="I&rsquo;ve been studying Physics Informed Machine Learning for my master thesis
+currently, i knew intuitively that these machine learning models are very useful
+for surrogate modeling, nonetheless i didn&rsquo;t knew how widely used surrogates
+were.
+For those who don&rsquo;t know, surrogate modeling (or meta modeling), is the
+practice of constructing an approximated model out of a high fidelity model -
+that can be computationally very expensive. They go from the basic idea that
+you can evaluate the expensive model a few times, and then use a statistical
+learning process over these results to interpolate a model that is much more
+cheaper to evaluate. This is very important for tasks such as optimization,
+parameter calibration, parametric studies, online evaluation (such as is digital
+twins), uncertainty quantification, and others - because these applications requires
+often thousands of model executions.">
+<meta name="keywords" content="blog,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Surrogate modelling and PIML">
+  <meta name="twitter:description" content="I’ve been studying Physics Informed Machine Learning for my master thesis currently, i knew intuitively that these machine learning models are very useful for surrogate modeling, nonetheless i didn’t knew how widely used surrogates were.
+For those who don’t know, surrogate modeling (or meta modeling), is the practice of constructing an approximated model out of a high fidelity model - that can be computationally very expensive. They go from the basic idea that you can evaluate the expensive model a few times, and then use a statistical learning process over these results to interpolate a model that is much more cheaper to evaluate. This is very important for tasks such as optimization, parameter calibration, parametric studies, online evaluation (such as is digital twins), uncertainty quantification, and others - because these applications requires often thousands of model executions.">
+
+<meta property="og:url" content="http://localhost:1313/til/surrogate_modelling_and_piml/">
+  <meta property="og:site_name" content="jprocha">
+  <meta property="og:title" content="Surrogate modelling and PIML">
+  <meta property="og:description" content="I’ve been studying Physics Informed Machine Learning for my master thesis currently, i knew intuitively that these machine learning models are very useful for surrogate modeling, nonetheless i didn’t knew how widely used surrogates were.
+For those who don’t know, surrogate modeling (or meta modeling), is the practice of constructing an approximated model out of a high fidelity model - that can be computationally very expensive. They go from the basic idea that you can evaluate the expensive model a few times, and then use a statistical learning process over these results to interpolate a model that is much more cheaper to evaluate. This is very important for tasks such as optimization, parameter calibration, parametric studies, online evaluation (such as is digital twins), uncertainty quantification, and others - because these applications requires often thousands of model executions.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="til">
+    <meta property="article:published_time" content="2025-05-22T08:44:16-03:00">
+    <meta property="article:modified_time" content="2025-05-22T08:44:16-03:00">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/til/surrogate_modelling_and_piml/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      jprocha
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/til/">TIL</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/pt-br/">🇧🇷</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://localhost:1313/til/surrogate_modelling_and_piml/">
+          Surrogate modelling and PIML
+        </a>
+      </h1>
+    </header>
+
+    <p>I&rsquo;ve been studying Physics Informed Machine Learning for my master thesis
+currently, i knew intuitively that these machine learning models are very useful
+for surrogate modeling, nonetheless i didn&rsquo;t knew how widely used surrogates
+were.</p>
+<p>For those who don&rsquo;t know, surrogate modeling (or meta modeling), is the
+practice of constructing an approximated model out of a high fidelity model -
+that can be computationally very expensive. They go from the basic idea that
+you can evaluate the expensive model a few times, and then use a statistical
+learning process over these results to interpolate a model that is much more
+cheaper to evaluate. This is very important for tasks such as optimization,
+parameter calibration, parametric studies, online evaluation (such as is digital
+twins), uncertainty quantification, and others - because these applications requires
+often thousands of model executions.</p>
+<p>This makes these models <strong>extremely</strong> important, because such applications
+are crucial for smart decision making, and the intelligent systems/machinery
+that forms the basis of modern society.</p>
+<p>And it happens that PIML algorithms are perfect for the task of getting
+surrogate models while solving many of the issues that the traditional methods
+have, for example by leveraging the symbolic differentiation on the input
+as a way to construct the differential equations from a model and use it
+as a constraint on the statistical learning process of the surrogate we get
+improvements on the problems related to the curse of dimensionality - since
+we effectively reduce the dimensionality of the problem by constraining it to
+the manifold that the differential equations live, and by the same reason we
+get a better approximation on the borders of the domain (and a little bit of
+extrapolation power) because it informs proper gradients on the borders.</p>
+<p>Will be trying to explore this lens more closely on the future.</p>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2025
+     João Pedro Rocha 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8QG3MCFPF"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-J8QG3MCFPF');
+        }
+      </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

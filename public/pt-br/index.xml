@@ -6,8 +6,15 @@
     <description>Recent content on jprocha</description>
     <generator>Hugo</generator>
     <language>pt-br</language>
-    <lastBuildDate>Wed, 01 Jan 2025 20:51:36 -0300</lastBuildDate>
+    <lastBuildDate>Sun, 23 Feb 2025 14:34:16 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/pt-br/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Medindo tempo elegantemente em Python - ft. context managers!</title>
+      <link>http://localhost:1313/pt-br/til/elegant_timing_in_python/</link>
+      <pubDate>Sun, 23 Feb 2025 14:34:16 -0300</pubDate>
+      <guid>http://localhost:1313/pt-br/til/elegant_timing_in_python/</guid>
+      <description>&lt;p&gt;Frequentemente, ao testar diferentes algoritmos e estratégias, precisamos&#xA;executar algum tipo de &lt;em&gt;benchmarking&lt;/em&gt; em blocos do programa. Há algum tempo,&#xA;precisei fazer isso para as várias etapas de uma simulação e refleti sobre uma boa&#xA;estrutura de temporização. Embora ferramentas tradicionais como o cProfile&#xA;sejam boas para uma visão geral, quando é necessário um controle mais refinado&#xA;do tempo em blocos de código, geralmente acabamos usando manualmente algo como&#xA;a biblioteca &lt;code&gt;time&lt;/code&gt; para fazer algo assim:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Vacas Voadoras</title>
       <link>http://localhost:1313/pt-br/til/flying_cows/</link>
@@ -20,7 +27,7 @@
       <link>http://localhost:1313/pt-br/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pt-br/about/</guid>
-      <description>&lt;p&gt;Oi, Sou João Pedro Rocha, estudante de pós-graduação em Computação Científica&#xA;no LNCC. (Laboratório Nacional de Computação Científica, &amp;#x1f1e7;&amp;#x1f1f7;).&lt;/p&gt;&#xA;&lt;p&gt;Sou formado em Física e agora estou desenvolvendo pesquisas em Aprendizado de&#xA;Máquina Científico, com Redes Neurais Informadas por Física aplicadas a&#xA;Fenômenos de Transporte para a segurança de reatores nucleares.&lt;/p&gt;&#xA;&lt;p&gt;Também trabalho com processamento de dados astrofísicos, principalmente séries&#xA;temporais fotométricas, adquiridas com os telescópios gerenciados pelo LNA&#xA;(Laboratório Nacional de Astrofísica, também &amp;#x1f1e7;&amp;#x1f1f7;).&lt;/p&gt;</description>
+      <description>&lt;p&gt;Oi, Sou João Pedro Rocha, estudante de Mestrado em Computação Científica&#xA;no LNCC. (Laboratório Nacional de Computação Científica, &amp;#x1f1e7;&amp;#x1f1f7;).&lt;/p&gt;&#xA;&lt;p&gt;Sou formado em Física e agora estou desenvolvendo pesquisa em Aprendizado de&#xA;Máquina Científico, com Redes Neurais Informadas por Física aplicadas a&#xA;Fenômenos de Transporte para a segurança de reatores nucleares.&lt;/p&gt;&#xA;&lt;p&gt;Também trabalho com processamento de dados astrofísicos, principalmente séries&#xA;temporais fotométricas, adquiridas com os telescópios gerenciados pelo LNA&#xA;(Laboratório Nacional de Astrofísica, também &amp;#x1f1e7;&amp;#x1f1f7;).&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

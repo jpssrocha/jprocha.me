@@ -2,8 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/projects/</loc>
+    <lastmod>2025-06-01T18:53:53-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="http://localhost:1313/pt-br/projects/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/projects/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-06-01T18:53:53-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="http://localhost:1313/pt-br/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/projects/piml-applied-to-nuclear-safety/</loc>
+    <lastmod>2025-06-01T18:53:53-03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/til/</loc>
-    <lastmod>2025-02-17T10:30:35-03:00</lastmod>
+    <lastmod>2025-05-26T19:31:41-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
@@ -15,17 +44,26 @@
                 href="http://localhost:1313/til/"
                 />
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-02-17T10:30:35-03:00</lastmod>
+    <loc>http://localhost:1313/til/jax_is_amazing/</loc>
+    <lastmod>2025-05-26T19:31:41-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/til/surrogate_modelling_and_piml/</loc>
+    <lastmod>2025-05-22T08:44:16-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/til/xhosa_cliking_sounds/</loc>
+    <lastmod>2025-05-21T21:50:38-03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/til/elegant_timing_in_python/</loc>
+    <lastmod>2025-02-23T14:34:16-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="http://localhost:1313/pt-br/"
+                href="http://localhost:1313/pt-br/til/elegant_timing_in_python/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="http://localhost:1313/til/elegant_timing_in_python/"
                 />
   </url><url>
     <loc>http://localhost:1313/til/rag_for_science_and_students/</loc>
@@ -54,18 +92,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/posts/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/projects/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="http://localhost:1313/pt-br/projects/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/projects/"
                 />
   </url><url>
     <loc>http://localhost:1313/about/</loc>

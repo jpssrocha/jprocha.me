@@ -6,6 +6,14 @@
     <description>Recent content on jprocha</description>
     <generator>Hugo</generator>
     <language>en</language>
+    <lastBuildDate>Sun, 01 Jun 2025 18:53:53 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Physics Informed Machine Learning for Modelling Natural Circulation Applied to Nuclear Safety</title>
+      <link>http://localhost:1313/projects/piml-applied-to-nuclear-safety/</link>
+      <pubDate>Sun, 01 Jun 2025 18:53:53 -0300</pubDate>
+      <guid>http://localhost:1313/projects/piml-applied-to-nuclear-safety/</guid>
+      <description>&lt;p&gt;As the world races to decarbonize energy systems, advanced nuclear reactors&#xA;emerge as a critical solution, delivering reliable, carbon-free power. A key&#xA;innovation in these reactors is the use of natural circulation, a naturally&#xA;ocurring phenomena that happens in fluids in the presence of a gravitational&#xA;field without any external incluence, this phenomena can be leveraged in the&#xA;reactor design to passively cool down reactors without the use of mechanical&#xA;pumps, making then inherently safer.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

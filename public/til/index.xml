@@ -6,8 +6,36 @@
     <description>Recent content on jprocha</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 17 Feb 2025 10:30:35 -0300</lastBuildDate>
+    <lastBuildDate>Mon, 26 May 2025 19:31:41 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/til/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jax is Amazing!</title>
+      <link>http://localhost:1313/til/jax_is_amazing/</link>
+      <pubDate>Mon, 26 May 2025 19:31:41 -0300</pubDate>
+      <guid>http://localhost:1313/til/jax_is_amazing/</guid>
+      <description>&lt;p&gt;It has a long time that i&amp;rsquo;ve been hearing about the jax framework but i&amp;rsquo;ve never&#xA;come to use it, since i&amp;rsquo;ve always thought it was just a deep learning framework, and i&#xA;was used to use PyTorch for it. But yesteday i was wanting to play with autograd&#xA;for coding a linear regression to learn more about the ins and outs of autograd,&#xA;and since i was just playing i&amp;rsquo;ve choosed jax for doing so.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Surrogate modelling and PIML</title>
+      <link>http://localhost:1313/til/surrogate_modelling_and_piml/</link>
+      <pubDate>Thu, 22 May 2025 08:44:16 -0300</pubDate>
+      <guid>http://localhost:1313/til/surrogate_modelling_and_piml/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been studying Physics Informed Machine Learning for my master thesis&#xA;currently, i knew intuitively that these machine learning models are very useful&#xA;for surrogate modeling, nonetheless i didn&amp;rsquo;t knew how widely used surrogates&#xA;were.&lt;/p&gt;&#xA;&lt;p&gt;For those who don&amp;rsquo;t know, surrogate modeling (or meta modeling), is the&#xA;practice of constructing an approximated model out of a high fidelity model -&#xA;that can be computationally very expensive. They go from the basic idea that&#xA;you can evaluate the expensive model a few times, and then use a statistical&#xA;learning process over these results to interpolate a model that is much more&#xA;cheaper to evaluate. This is very important for tasks such as optimization,&#xA;parameter calibration, parametric studies, online evaluation (such as is digital&#xA;twins), uncertainty quantification, and others - because these applications requires&#xA;often thousands of model executions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Xhosa-Zulu Cliking Sounds</title>
+      <link>http://localhost:1313/til/xhosa_cliking_sounds/</link>
+      <pubDate>Wed, 21 May 2025 21:50:38 -0300</pubDate>
+      <guid>http://localhost:1313/til/xhosa_cliking_sounds/</guid>
+      <description>&lt;p&gt;Well &amp;hellip; according to the voices of my head i was supposed to write about&#xA;science and tech here &amp;hellip; But i discovered something cool in the intervals of&#xA;discussions about science and tech these day. It happened that there was a BRICS&#xA;meeting at my institute about the collaborations in HPC and AI, so we had people&#xA;from here (Brazil), Russia, China, India, South Africa, UAE, Iran, and others&#xA;that i didn&amp;rsquo;t interacted. The coolest cultural stuff i learned was from the South&#xA;African delegation, more specifically from mr. Happy (his name is actually &amp;ldquo;Happy&amp;rdquo;)&#xA;he mentioned the &amp;ldquo;Clicking languages&amp;rdquo; of South Africa that uses clicking sounds,&#xA;mainly used by the Zulu and Xhosa people.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Elegant Timing in Python - ft. context managers!</title>
+      <link>http://localhost:1313/til/elegant_timing_in_python/</link>
+      <pubDate>Sun, 23 Feb 2025 14:34:16 -0300</pubDate>
+      <guid>http://localhost:1313/til/elegant_timing_in_python/</guid>
+      <description>&lt;p&gt;Frequently when testing out different algorithms and strategies we need to run&#xA;some sort of bench marking on blocks of the program. Some time ago i had to do&#xA;it for the many steps of a simulation and was reflecting on a good timing&#xA;structure. While traditional bench marking tools like cProfile are quite good&#xA;for getting an overview, when more refined timing of code blocks is necessary&#xA;usually we end up resorting to manually use something like the time library to&#xA;do something like this:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>RAG for Scientists and Science Students</title>
       <link>http://localhost:1313/til/rag_for_science_and_students/</link>
