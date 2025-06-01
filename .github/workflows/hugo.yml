@@ -45,6 +45,11 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+          lfs: true
+      
+      - name: Pull LFS files
+        run: git lfs pull  # Add this step right after checkout        
+        
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
