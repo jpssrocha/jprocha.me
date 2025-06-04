@@ -1,3 +1,5 @@
 # Projetos
 
-Aqui estão alguns dos meus projetos. Irei registra-los mais tarde.
+**Está página está em construção :construction:**
+
+Aqui estão alguns dos meus projetos. Estou registrando aos poucos.
