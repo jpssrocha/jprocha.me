@@ -1,0 +1,64 @@
++++
+date = '2025-12-22T20:46:50-03:00'
+draft = false
+title = 'Split Keyboards are Worthy the Trouble!'
++++
+
+I’ve finally gathered enough evidence to make it official: split keyboards are
+absolutely worth the hype.
+
+I was skeptical at first, but having only tested one for a couple of weeks the
+benefits became impossible to ignore.
+
+So, why should you care? Here’s my list, from the broadest perks to the most niche:
+
+- Standard keyboards hurt! Simply moving your hands apart to match your
+  shoulders makes a shocking difference. My back pain from typing has almost
+  vanished.
+
+- If you put it in an angle, you get less wrist pain too.
+
+- Minimal hand movement by default. The physical separation forces you to fix
+  those inefficient typing habits you didn’t even know you had.
+
+- The thumb cluster is genius. Seriously, why have we been wasting our two
+  strongest fingers on just the spacebar?!
+
+- You can put a little snack in the middle. :D (A practical and delicious feature.)
+
+- It’s just stylish… Let’s be honest, it looks cool.
+
+- Last but not least ... You can be like a Jedi building your own lightsaber! The open-source world is
+  full of totally customizable variations for max efficiency. So, why not thinker?
+
+# Cons
+
+The only true con is that these guys are usually not cheap ... so if you're
+a broke student it can be difficult to get one. But if you have the skills you
+can build your own for little money.
+
+The other "cons" are personality dependent. Like the learning curve can be either
+a chore or an exciting new challenge it depends on personal framing.
+
+# If you want my suggestion ...
+
+If you’re an old soul who doesn’t want to change too much, just buy a standard
+keyboard that’s split down the middle. You’ll get the two biggest freebies: less
+pain and slightly better habits.
+
+But if you’re an adventurer? Dive headfirst into the weirdest open-source design
+your budget allows. Tinker with it, tweak it, and unlock those massive typing
+speed gains. It’s one heck of a brain workout.
+
+# FAQ
+
+“But will I forget how to use a normal keyboard?”
+
+That’s a total myth. It’s like asking if you’ll forget your native language
+after moving abroad. You don’t. The only real risk is getting a slower on a
+standard board, and even that’s minimal if you stick with a QWERTY layout. (If
+you jump to something like Colemak, the effect is more pronounced, but
+still manageable.)
+
+So, there you have it. My verdict is in: give a split keyboard a shot. Your
+shoulders (and hands) will thank you.

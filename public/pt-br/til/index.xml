@@ -15,12 +15,5 @@
       <guid>http://localhost:1313/pt-br/til/elegant_timing_in_python/</guid>
       <description>&lt;p&gt;Frequentemente, ao testar diferentes algoritmos e estratégias, precisamos&#xA;executar algum tipo de &lt;em&gt;benchmarking&lt;/em&gt; em blocos do programa. Há algum tempo,&#xA;precisei fazer isso para as várias etapas de uma simulação e refleti sobre uma boa&#xA;estrutura de temporização. Embora ferramentas tradicionais como o cProfile&#xA;sejam boas para uma visão geral, quando é necessário um controle mais refinado&#xA;do tempo em blocos de código, geralmente acabamos usando manualmente algo como&#xA;a biblioteca &lt;code&gt;time&lt;/code&gt; para fazer algo assim:&lt;/p&gt;</description>
     </item>
-    <item>
-      <title>Vacas Voadoras</title>
-      <link>http://localhost:1313/pt-br/til/flying_cows/</link>
-      <pubDate>Wed, 01 Jan 2025 20:51:36 -0300</pubDate>
-      <guid>http://localhost:1313/pt-br/til/flying_cows/</guid>
-      <description>&lt;p&gt;A física das vacas voadoras é um assunto realmente interessante, que é muito&#xA;importante para a economia, dado que seu cocô pode fertilizar campos inteiros&#xA;de uma aérea maneira eficiente.&lt;/p&gt;&#xA;&lt;p&gt;No entanto, também pode ser um problema quando as vacas voadoras voam sobre&#xA;cidades, já que podem cagar em  negócios aumentando as despesas com limpeza de&#xA;caca, dado que os negócios já têm sua própria caca para limpar, esse processo é&#xA;bastante ineficiente.&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>

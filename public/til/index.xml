@@ -6,8 +6,22 @@
     <description>Recent content on jprocha</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 26 May 2025 19:31:41 -0300</lastBuildDate>
+    <lastBuildDate>Mon, 22 Dec 2025 20:46:50 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/til/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Split Keyboards are Worthy the Trouble!</title>
+      <link>http://localhost:1313/til/split_keyboards/</link>
+      <pubDate>Mon, 22 Dec 2025 20:46:50 -0300</pubDate>
+      <guid>http://localhost:1313/til/split_keyboards/</guid>
+      <description>&lt;p&gt;I’ve finally gathered enough evidence to make it official: split keyboards are&#xA;absolutely worth the hype.&lt;/p&gt;&#xA;&lt;p&gt;I was skeptical at first, but having only tested one for a couple of weeks the&#xA;benefits became impossible to ignore.&lt;/p&gt;&#xA;&lt;p&gt;So, why should you care? Here’s my list, from the broadest perks to the most niche:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Standard keyboards hurt! Simply moving your hands apart to match your&#xA;shoulders makes a shocking difference. My back pain from typing has almost&#xA;vanished.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New cool tool detected: Entr</title>
+      <link>http://localhost:1313/til/entr/</link>
+      <pubDate>Sun, 15 Jun 2025 21:00:57 -0300</pubDate>
+      <guid>http://localhost:1313/til/entr/</guid>
+      <description>&lt;p&gt;Found a new useful tool today! Lately it has become increasingly difficult for&#xA;me to find new useful tools for improving my productivity at the command line,&#xA;so I&amp;rsquo;m happy to find it! This tool is &lt;code&gt;entr&lt;/code&gt;!&lt;/p&gt;&#xA;&lt;p&gt;It is a tool that will live rerun a given command if a list of files given on&#xA;the standard input gets changed and print the outputs. Quite simple but very&#xA;useful since it allows the user to do live rerun any generic command line tool,&#xA;combine that with a build system like &lt;code&gt;make&lt;/code&gt; and you have a system that can&#xA;rerun smart pipelines whatever a file changes. For example to rerun a recipe to&#xA;compile a C project defined as a Makefile from the project folder you can use:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Jax is Amazing!</title>
       <link>http://localhost:1313/til/jax_is_amazing/</link>
@@ -35,20 +49,6 @@
       <pubDate>Sun, 23 Feb 2025 14:34:16 -0300</pubDate>
       <guid>http://localhost:1313/til/elegant_timing_in_python/</guid>
       <description>&lt;p&gt;Frequently when testing out different algorithms and strategies we need to run&#xA;some sort of bench marking on blocks of the program. Some time ago i had to do&#xA;it for the many steps of a simulation and was reflecting on a good timing&#xA;structure. While traditional bench marking tools like cProfile are quite good&#xA;for getting an overview, when more refined timing of code blocks is necessary&#xA;usually we end up resorting to manually use something like the time library to&#xA;do something like this:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>RAG for Scientists and Science Students</title>
-      <link>http://localhost:1313/til/rag_for_science_and_students/</link>
-      <pubDate>Mon, 17 Feb 2025 10:30:35 -0300</pubDate>
-      <guid>http://localhost:1313/til/rag_for_science_and_students/</guid>
-      <description>&lt;p&gt;Some time ago I&amp;rsquo;ve saw the internet be flooded with the term &lt;strong&gt;RAG&lt;/strong&gt;, which&#xA;stands for &lt;em&gt;Retrieval Augmented Generation&lt;/em&gt;. At the time i didn&amp;rsquo;t paid a lot of&#xA;attention, since it was related with the much hyped subject of Generative AI&#xA;and LLMs (Large Language Models), so I&amp;rsquo;ve thought it wasn&amp;rsquo;t that useful and&#xA;people was talking about it just because it was aligned with the hype cycle.&lt;/p&gt;&#xA;&lt;p&gt;Nonetheless, yesterday I&amp;rsquo;ve took a look at it &amp;hellip; And discovered that i was&#xA;wrong, this thing is highly useful (specially for ADHD people like myself).&#xA;After some time reflecting about my attitude of judging the book by it&amp;rsquo;s cover,&#xA;I&amp;rsquo;ve researched a bit about more the subject and started to think about the&#xA;possibilities (i&amp;rsquo;ll leave the resources i&amp;rsquo;ve found useful at the bottom). I&amp;rsquo;ll now&#xA;share with you the core idea of it and then some i&amp;rsquo;ve had that i think will be&#xA;useful for scientist and science students (like me). I&amp;rsquo;ll be focusing on RAGs&#xA;for text data, still, it can be used with other types of media, the idea is&#xA;roughly the same, with some asterisks.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Flying Cows</title>
-      <link>http://localhost:1313/til/flying_cows/</link>
-      <pubDate>Wed, 01 Jan 2025 20:51:36 -0300</pubDate>
-      <guid>http://localhost:1313/til/flying_cows/</guid>
-      <description>&lt;p&gt;The physics of flying cows is a really interesting subject, which is&#xA;very important for the economy, given that their poop can fertilize&#xA;entire fields in an efficient air bone manner.&lt;/p&gt;&#xA;&lt;p&gt;Nevertheless they can also be a problem when flying cows flyes over&#xA;cities, since they can fall on business places growing the business&#xA;expenses on poop cleaning, given that they already have their own to&#xA;clean, this process is quite inefficient.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

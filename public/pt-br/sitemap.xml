@@ -41,19 +41,6 @@
                 href="http://localhost:1313/pt-br/til/elegant_timing_in_python/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pt-br/til/flying_cows/</loc>
-    <lastmod>2025-01-01T20:51:36-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/til/flying_cows/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="http://localhost:1313/pt-br/til/flying_cows/"
-                />
-  </url><url>
     <loc>http://localhost:1313/pt-br/posts/</loc>
     <xhtml:link
                 rel="alternate"
