@@ -1,0 +1,10 @@
+# Quarto build output
+_site/
+.quarto/
+.quarto-cache/
+
+# Editor/OS noise
+.DS_Store
+
+/.quarto/
+**/*.quarto_ipynb

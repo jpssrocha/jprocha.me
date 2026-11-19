@@ -1,0 +1,11 @@
+---
+title: "Projects"
+listing:
+  contents: projects   # Points to the projects/ folder
+  type: grid           # Cards view, great for visual project showcases
+  sort: "date desc"
+---
+
+**This page is under construction 🚧**
+
+Here are some of my projects. I'm slowly registering then now.

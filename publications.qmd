@@ -1,0 +1,12 @@
+---
+title: "Publications"
+bibliography: scientific_papers.bib
+nocite: |
+  @*
+csl: https://www.zotero.org/styles/apa  # Or path to a local .csl file
+---
+
+Below is a complete list of my published papers and preprints.
+
+::: {#refs}
+:::

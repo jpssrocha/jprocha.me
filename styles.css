@@ -1,0 +1,10 @@
+/* css styles */
+
+/* Custom oval profile photo */
+.about-image, 
+.about-entity img {
+  border-radius: 50% !important;  /* Creates the smooth curved ellipse */
+  width: 220px !important;        /* Control width */
+  height: 300px !important;       /* Set height differently from width */
+  object-fit: cover !important;   /* Prevents your photo from warping */
+}

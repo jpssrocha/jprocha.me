@@ -1,0 +1,40 @@
+project:
+  type: website
+
+website:
+  title: "jprocha"
+  description: "João's personal page"
+  site-url: https://jprocha.me
+  favicon: img/favicon.svg
+  google-analytics: "G-J8QG3MCFPF"
+  page-footer:
+    left: "© 2025 João Pedro Rocha"
+    right: "Made with [Quarto](https://quarto.org/)"
+  navbar:
+    right:
+      - href: about.qmd
+        text: About
+      - href: pt-br/index.qmd
+        text: Português
+      - icon: github
+        href: https://github.com/jpssrocha/
+      - icon: linkedin
+        href: https://www.linkedin.com/in/joao-pedro-rocha-b28b7b219/
+    left:
+      - href: index.qmd
+        text: Home
+      - href: blog.qmd
+        text: Blog
+      - href: til.qmd
+        text: TIL
+      - href: projects.qmd
+        text: Projects
+      - href: publications.qmd
+        text: Publications
+
+format:
+  html:
+    theme:
+      - solar
+      - brand
+    css: styles.css
