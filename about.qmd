@@ -1,5 +1,6 @@
 ---
 title: "About"
+author: ""
 image: images/perfil2.jpeg
 about:
   template: jolla
@@ -15,17 +16,16 @@ about:
 Hi, I'm João Pedro Rocha, a Masters Student of Scientific Computing at LNCC
 (National Laboratory for Scientific Computing, 🇧🇷).
 
-I'm from a Physics background and am now developing research in Scientific
-Machine Learning, with Physics Informed Neural Networks applied to Transport
-Phenomena for nuclear reactor safety.
+I have a Physics background and am now developing research in Scientific
+Machine Learning, with Neural Surrogates applied to build Digital Twins
+for the energy industry.
 
 I also do some work with Astrophysical data processing, mainly photometrical
 time series, acquired with the telescopes managed by the LNA (National Astrophysics
 Laboratory, also 🇧🇷).
 
 Here i share about the stuff i learn along the way so that who are interested
-can take advantage from it and we can interact about it (you can find my social
-networks on the [main page](/)!).
+can take advantage from it and we can learn together.
 
 Here you will find:
 

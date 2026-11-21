@@ -1,5 +1,8 @@
 project:
   type: website
+  render:
+    - "**/*.qmd"
+    - "!archive/**"
 
 website:
   title: "jprocha"
@@ -14,8 +17,6 @@ website:
     right:
       - href: about.qmd
         text: About
-      - href: pt-br/index.qmd
-        text: Português
       - icon: github
         href: https://github.com/jpssrocha/
       - icon: linkedin
