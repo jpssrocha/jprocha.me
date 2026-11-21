@@ -2,6 +2,7 @@
 _site/
 .quarto/
 .quarto-cache/
+publications.yml
 
 # Editor/OS noise
 .DS_Store

@@ -1,12 +1,19 @@
 ---
 title: "Publications"
-bibliography: scientific_papers.bib
-nocite: |
-  @*
-csl: https://www.zotero.org/styles/apa  # Or path to a local .csl file
+# publications.yml is generated from scientific_papers.bib by scripts/publications.py
+listing:
+  contents: publications.yml
+  type: table
+  sort: "date desc"
+  sort-ui: false
+  filter-ui: false
+  field-links: []
+  fields: [title, venue, when, doi]
+  field-display-names:
+    title: "Title"
+    venue: "Published in"
+    when: "Date"
+    doi: "DOI"
 ---
 
 Below is a complete list of my published papers and preprints.
-
-::: {#refs}
-:::

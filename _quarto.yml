@@ -1,5 +1,7 @@
 project:
   type: website
+  # Regenerate publications.yml from scientific_papers.bib before each render
+  pre-render: scripts/publications.py
   render:
     - "**/*.qmd"
     - "!archive/**"

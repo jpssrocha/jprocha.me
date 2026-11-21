@@ -15,3 +15,35 @@
   display: inline-block;
   text-align: left;
 }
+
+/* Publications table: emphasize the title, keep the date on one line */
+.quarto-listing-container-table {
+  overflow-x: auto;
+}
+
+.quarto-listing-table {
+  font-size: 0.9em;
+  min-width: 720px;
+}
+
+.quarto-listing-table th:nth-child(1),
+.quarto-listing-table td:nth-child(1) {
+  width: 45%;
+}
+
+.quarto-listing-table th:nth-child(2),
+.quarto-listing-table td:nth-child(2) {
+  width: 28%;
+}
+
+.quarto-listing-table th:nth-child(3),
+.quarto-listing-table td:nth-child(3) {
+  width: 9%;
+  white-space: nowrap;
+}
+
+.quarto-listing-table th:nth-child(4),
+.quarto-listing-table td:nth-child(4) {
+  width: 18%;
+  overflow-wrap: anywhere;
+}

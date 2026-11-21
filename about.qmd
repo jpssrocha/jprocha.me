@@ -1,6 +1,5 @@
 ---
 title: "About"
-author: ""
 image: images/perfil2.jpeg
 about:
   template: jolla

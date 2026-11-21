@@ -1,6 +1,5 @@
 ---
 title: "Sobre"
-author: ""
 lang: pt-BR
 image: ../images/perfil2.jpeg
 about:
