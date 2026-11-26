@@ -6,7 +6,9 @@ about:
   links:
     - icon: linkedin
       text: LinkedIn
-      href: https://www.linkedin.com/in/joao-pedro-rocha-b28b7b219/
+      href: https://linkedin.com/in/joão-pedro-rocha-b28b7b219
+
+      
     - icon: github
       text: Github
       href: https://github.com/jpssrocha/
