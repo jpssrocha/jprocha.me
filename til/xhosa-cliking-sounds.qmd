@@ -1,6 +1,7 @@
 ---
 title: "Xhosa-Zulu Cliking Sounds"
 date: "2025-05-21T21:50:38-03:00"
+image: figures/xhosa-map.png
 ---
 
 Well ... according to the voices of my head i was supposed to write about
@@ -19,6 +20,8 @@ which the Zulu and Xhosa people absorbed some influence in it's own languages,
 resulting on the clicking sounds they have today for the "c", "x" and "q"
 letters, as well as the "p" letter for the Zulu. These sounds make for very
 distinctive sounding words.
+
+![Density of isiXhosa first-language speakers across South Africa (Census 2011). Image: [Htonl](https://commons.wikimedia.org/wiki/File:South_Africa_2011_Xhosa_speakers_density_map.svg), [public domain](https://commons.wikimedia.org/wiki/File:South_Africa_2011_Xhosa_speakers_density_map.svg), via Wikimedia Commons.](figures/xhosa-map.png){fig-alt="Map of isiXhosa first-language speakers in South Africa"}
 
 According to mr. Happy, the Xhosa and Zulu people in South Africa you like
 you more if you can make these sounds while talking hehe But then you'll need

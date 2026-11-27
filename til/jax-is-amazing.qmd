@@ -1,6 +1,7 @@
 ---
 title: "Jax is Amazing!"
 date: "2025-05-26T19:31:41-03:00"
+image: figures/gpu.jpg
 ---
 
 It has a long time that i've been hearing about the jax framework but i've never
@@ -8,6 +9,8 @@ come to use it, since i've always thought it was just a deep learning framework,
 was used to use PyTorch for it. But yesteday i was wanting to play with autograd
 for coding a linear regression to learn more about the ins and outs of autograd,
 and since i was just playing i've choosed jax for doing so.
+
+![An NVIDIA GeForce graphics processing unit (GPU). Image: [Henry Mühlpfordt](https://commons.wikimedia.org/wiki/File:Nvidia_geforce_ti_4600_gpu_2007-11-27_23-03.jpg), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), via Wikimedia Commons.](figures/gpu.jpg){fig-alt="An NVIDIA GeForce graphics card"}
 
 When i was reading the documentation and coding the structure i've realized that
 it could be used in a way very close to numpy (they even give a numpy-like api

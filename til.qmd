@@ -4,6 +4,7 @@ listing:
   contents: til
   sort: "date desc"
   type: default
+  image-height: 150px
   categories: true
   sort-ui: false
   filter-ui: false

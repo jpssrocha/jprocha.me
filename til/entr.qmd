@@ -1,11 +1,14 @@
 ---
 title: "New cool tool detected: Entr"
 date: "2025-06-15T21:00:57-03:00"
+image: figures/terminal.png
 ---
 
 Found a new useful tool today! Lately it has become increasingly difficult for
 me to find new useful tools for improving my productivity at the command line,
 so I'm happy to find it! This tool is `entr`!
+
+![A Linux terminal running a shell. Image: [Valerio Bozzolan](https://commons.wikimedia.org/wiki/File:Hello,_world!_on_Debian_GNU-Hurd_%28xfce4-terminal%29.png), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), via Wikimedia Commons.](figures/terminal.png){fig-alt="A Linux terminal window"}
 
 It is a tool that will live rerun a given command if a list of files given on
 the standard input gets changed and print the outputs. Quite simple but very

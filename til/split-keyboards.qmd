@@ -1,10 +1,13 @@
 ---
 title: "Split Keyboards are Worthy the Trouble!"
 date: "2025-12-22T20:46:50-03:00"
+image: figures/split-keyboard.jpg
 ---
 
 I’ve finally gathered enough evidence to make it official: split keyboards are
 absolutely worth the hype.
+
+![An ErgoDox split ergonomic keyboard. Image: [mikael altemark](https://commons.wikimedia.org/wiki/File:FalbaDox_split_ergonomic_keyboard_%282015-01-29_by_mikael_altemark%29.jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/), via Wikimedia Commons.](figures/split-keyboard.jpg){fig-alt="An ErgoDox split ergonomic keyboard"}
 
 I was skeptical at first, but having only tested one for a couple of weeks the
 benefits became impossible to ignore.

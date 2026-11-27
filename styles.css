@@ -1,5 +1,44 @@
 /* css styles */
 
+/* Default listing (Blog / TIL): let each post fill the card width.
+   Posts have no images, so the empty 30% image column is dropped, and the
+   date column is narrowed instead of reserving a third of the card. */
+.quarto-listing-container-default .quarto-post .thumbnail:has(.listing-item-img-placeholder) {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .quarto-listing-container-default .quarto-post .metadata {
+    flex-basis: 6.5em;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .quarto-listing-container-default .quarto-post .thumbnail {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+  }
+
+  .quarto-listing-container-default .quarto-post .body {
+    flex-basis: 0;
+    flex-grow: 2;
+    flex-shrink: 1;
+    min-width: 0;
+  }
+}
+
+/* Spacing inside each listing card: a little more air between the title,
+   category tags, and description. */
+.quarto-listing-container-default .quarto-post .body .listing-title {
+  margin-bottom: 0.5em;
+}
+
+.quarto-listing-container-default .quarto-post .body .listing-categories {
+  margin-bottom: 0.5em;
+}
+
 /* Custom oval profile photo */
 .about-image, 
 .about-entity img {

@@ -5,6 +5,7 @@ listing:
   feed: true
   sort: "date desc"
   type: default
+  image-height: 150px
   categories: true
   sort-ui: false
   filter-ui: false
@@ -12,4 +13,4 @@ page-layout: full
 title-block-banner: true
 ---
 
-Here are longer pieces of knowledge. (for now there are none ...)
+Here are longer pieces of knowledge. 

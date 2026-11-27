@@ -1,6 +1,7 @@
 ---
 title: "Surrogate modelling and PIML"
 date: "2025-05-22T08:44:16-03:00"
+image: figures/gaussian-process.png
 ---
 
 I've been studying Physics Informed Machine Learning for my master thesis
@@ -17,6 +18,8 @@ cheaper to evaluate. This is very important for tasks such as optimization,
 parameter calibration, parametric studies, online evaluation (such as is digital
 twins), uncertainty quantification, and others - because these applications requires
 often thousands of model executions.
+
+![Gaussian process regression: a cheap statistical surrogate fitted through a handful of data points. Image: [Cdipaolo96](https://commons.wikimedia.org/wiki/File:Gaussian_Process_Regression.png), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), via Wikimedia Commons.](figures/gaussian-process.png){fig-alt="Gaussian process regression fitted through data points"}
 
 This makes these models **extremely** important, because such applications
 are crucial for smart decision making, and the intelligent systems/machinery

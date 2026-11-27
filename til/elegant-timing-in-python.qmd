@@ -1,6 +1,7 @@
 ---
 title: "Elegant Timing in Python - ft. context managers!"
 date: "2025-02-23T14:34:16-03:00"
+image: figures/stopwatch.jpg
 ---
 
 Frequently when testing out different algorithms and strategies we need to run
@@ -22,6 +23,8 @@ toc = time()
 
 print(f" Took: {toc - tic}")
 ```
+
+![A mechanical stopwatch. Image: Stefan (German Wikipedia), [public domain](https://commons.wikimedia.org/wiki/File:Stoppuhr_hanhart.jpg), via Wikimedia Commons.](figures/stopwatch.jpg){fig-alt="A mechanical stopwatch"}
 
 While this gets the work done, it can become quite cumbersome when you need to
 track many blocks (even wrong sometimes). These days i was doing so and

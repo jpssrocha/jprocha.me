@@ -1,0 +1,81 @@
+---
+title: "Why Vanilla PINNs are a Half-Baked Masterpiece."
+date: "2026-11-27"
+image: figures/pinns-navier-stokes.png
+categories:
+  - SciML
+  - Simulation
+---
+
+Now I get why Vanilla PINNs are so brittle for forward problems! And why old
+school numericists frown at it. They are essentially a half-baked Weighted
+Residuals Method (that happens to use Autodiff in a very clever way).
+
+Why do I say that? It’s a long history...
+
+![A physics-informed neural network (PINN) predicting a flow field governed by the Navier–Stokes equations. Image: [Amirhossein Arzani](https://commons.wikimedia.org/wiki/File:Physics-informed_nerural_networks_Navier-Stokes.png), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), via Wikimedia Commons.](figures/pinns-navier-stokes.png){fig-alt="PINN predicting a Navier–Stokes flow field"}
+
+I was studying the Finite Element Method (FEM), and to understand the
+nomenclature, I had to go back to the father of *ALL* numerical simulation
+methods: the *Weighted Residuals Method* (WRM).
+
+In this method, we have a differential operator ($\mathcal{P}$), a forcing
+function ($f$), a "trial function" ($u$, a candidate solution we pass to the
+operator to check the error), and a "test function" ($v$, which weights how much
+we care about the solution deviating from the true field over the domain). We
+need the test function because finding a perfectly matched solution over all of
+the domain for an arbitrary PDE would require infinite degrees of freedom (and
+therefore infinite compute and memory).
+
+$$
+  \int_{\Omega} v \left( \mathcal{P}u - f \right) \, d\Omega = 0 . 
+$$
+
+Back in the day, mathematicians used this to systematically verify "trials" at
+solutions found via intuition or analytical methods — hence "trial function."
+But they soon realized this same machinery could guide the development and
+classify numerical methods.
+
+Every numerical method is just a choice of how to build the trial function, the
+test function, and how to solve the resulting optmization problem. (And yes,
+there is always a hidden optimization problem. We just don't realize it because
+many methods are designed to end up in closed-form optimization problem — but
+when iterative solvers pop up, the optimization nature shows its face in any
+method).
+
+# This brings us to why PINNs struggle with forward problems.
+
+If you choose your test function to be a Dirac delta over a fixed grid,
+congratulations: you’ve built a "collocation method." The Dirac delta means: "I
+want my solution to be exact at these specific coordinates." Sounds good, right?
+But because this constraint is so strong, the solution can end up contorting
+itself wildly between the points to satisfy it. This causes classic numerical
+nightmares like checkerboard patterns and Runge phenomena.
+
+To fix this, classical numericists use inductive bias, which means, to bias the
+structure of the test and trial functions in a given direction that they know
+that is coherent with the mathematical structure being represented in order to
+constraint the space of possible solutions (hopefully to a unique solution).
+Collocation methods (like FDM) bias the trial function using local stencils
+to keep the solution stiff and well-behaved. The Finite Element Method (FEM)
+goes even further: it throws away the Dirac delta entirely, using a smoother
+test function (the "Hat" function) and a Weak Form to relax the constraints
+and average out the error. The Finite Volume Method (FVM), bake the physics of
+conservation itself in the method.
+
+# So why is the Vanilla PINN half-baked?
+
+Because it uses the most naive approach possible: a Dirac delta test function
+over a random cloud of points, and a plain neural network (a standard MLP) as
+the trial function. A plain neural network is a universal approximator with
+zero inductive bias for this kind of task. And you try to satisfy strong,
+point-wise constraints with a hyper-flexible, global rubber sheet. The result is
+a terrible, non-convex optimization landscape, full of spurious local minima.
+
+This has a charm that PINNs come as close to a "pure" WRM as possible by
+leveraging Autodiff. But in doing so, they throw 50 years of numerical research
+out the window.
+
+Nonetheless, that elegant use of Autodiff inspired a ton of new methods (like
+Variational PINNs and Neural Operators). So, despite being half-baked, PINNs
+deserve a place in every numerical developer's heart!
